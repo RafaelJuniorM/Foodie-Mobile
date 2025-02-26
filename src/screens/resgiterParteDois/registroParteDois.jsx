@@ -8,10 +8,9 @@ import icons from "../../constants/icons.js";
 
 function RegistroParteDois() {
   return (
-    <ScrollView>
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <ScrollView style={styles.scrollView} automaticallyAdjustKeyboardInsets ={true}>
         <View style={styles.header}>
-          <Image style={styles.back} source={icons.back} />
           <Header texto="Informe seu endereço." />
         </View>
 
@@ -36,7 +35,7 @@ function RegistroParteDois() {
             </View>
 
             <View style={styles.input30}>
-              <Inputs label= "UF  " />
+              <Inputs label="UF  " />
             </View>
           </View>
 
@@ -48,8 +47,8 @@ function RegistroParteDois() {
         <View style={styles.button}>
           <Button text="Criar minha conta"> </Button>
         </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

@@ -5,13 +5,16 @@ import { color, fontSize } from "../../constants/theme";
 export const styles = StyleSheet.create({
     container: {
        flex: 1,
-       padding: 40,
+       paddingLeft: 40,
+       paddingRight: 40,
+       paddingTop: 55,
        justifyContent: 'center',
-       alignItems: 'center'
+       alignItems: 'center',
+       backgroundColor: color.white
     },  
     scrollView: {
         width: '100%',
-        marginTop: 110
+        
     },
     form: {
         width:'100%',

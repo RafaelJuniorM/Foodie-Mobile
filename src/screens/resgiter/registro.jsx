@@ -5,10 +5,10 @@ import Inputs from "../../components/inputs/input.jsx";
 import Button from "../../components/button/button.jsx"
 
 
-function Registro(){
+function Registro(props){
     return (
         <View style={styles.container}>
-              <ScrollView style={styles.scrollView}>
+              <ScrollView style={styles.scrollView} automaticallyAdjustKeyboardInsets ={true}>
                 <Header texto='Criar sua conta.'/>
                 
                 <View style={styles.form}> 
@@ -30,14 +30,10 @@ function Registro(){
                 </View>
             
                 <View style={styles.button} >
-                    <Button text='Proximo passo'> </Button>
+                    <Button text='Proximo passo' onPress={() =>props.navigation.navigate("registroParteDois")}> </Button>
                 </View>
             </ScrollView>
-            <View style={styles.footer}>
-                <TouchableOpacity>
-                    <Text style={styles.footerText}> Acessar minha conta</Text>
-                </TouchableOpacity>
-            </View>
+           
         </View>
     )
 }

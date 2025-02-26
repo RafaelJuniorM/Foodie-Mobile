@@ -7,14 +7,14 @@ import Button from "../../components/button/button.jsx"
 
 
 
-function Login(){
+function Login(props){
 
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
-    
-    function ProcessarLogin(){
+   const [email, setEmail] = useState(''); //email =  variavel de estado 
+   const [senha, setSenha] = useState('');
+   
+   function processarLogin(){
         console.log(email, senha)
-    }
+   }
 
     return (
         <View style={styles.container}>
@@ -25,10 +25,10 @@ function Login(){
                     <Inputs 
                         label = 'E-mail' 
                         placeholder ='seuemail@email.com'
-                        onChangeText = {(texto) => {
+                        onChangeText = {(texto)=>{
                             setEmail(texto)
-                        }}   
-                        value ={ email} 
+                        }}
+                        value={email}
                     />    
                 </View>
 
@@ -36,18 +36,23 @@ function Login(){
                     <Inputs 
                         label = 'Senha'  
                         isPassword ={true} 
-                        onChangeText = { (texto) => setSenha(texto)}
-                        value={senha}    
+                        onChangeText = {(texto)=>{
+                            setSenha(texto)
+                        }}
+                        value={senha}
                     />
                 </View>
             </View>
            
             <View style={styles.button} >
-                <Button text='Acessar' onPress={ProcessarLogin()}> </Button>
+                <Button text='Acessar' 
+                    onPress = {processarLogin}
+                > 
+                </Button>
             </View>
 
             <View style={styles.footer}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => props.navigation.navigate("registro")}>
                     <Text style={styles.footerText}> Criar minha conta.</Text>
                 </TouchableOpacity>
             </View>

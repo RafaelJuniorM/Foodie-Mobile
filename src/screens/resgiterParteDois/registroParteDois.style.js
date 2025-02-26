@@ -4,27 +4,19 @@ import { color, fontSize } from "../../constants/theme";
 
 export const styles = StyleSheet.create({
     container: {
-       flex: 1,
-       padding: 40,
+        flex: 1,
+       paddingLeft: 40,
+       paddingRight: 40,
+       paddingTop: 55,
        justifyContent: 'center',
-       alignItems: 'center'
+       alignItems: 'center',
+       backgroundColor: color.white,
+      
     },  
-
-    header: {
-        flexDirection: 'row',
-        marginTop: 50,
-        
+    scrollView: {
+        width: '100%',
         
     },
-
-    back: {
-       width: 40,
-       height: 40,
-       marginLeft: 20,
-       flexDirection:'row',
-       
-    },
-
     form: {
         width:'100%',
         marginTop: 80,

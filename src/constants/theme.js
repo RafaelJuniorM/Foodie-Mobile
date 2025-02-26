@@ -4,8 +4,9 @@ const color = {
     red: "#ed5359",
     dark_gray: "5d6275",
     medium_gray: "#a6abbc",
-    light_gray: "#e5ecfc",
-    white: "#f4f7fe",
+    light_gray: "#f4f7fe",
+    gray:' #e5ecfc',
+    white: "#fff",
     green: "#38c682"
 }
 

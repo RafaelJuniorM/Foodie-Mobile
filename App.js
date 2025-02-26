@@ -1,13 +1,10 @@
 
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './src/screens/login/login.jsx';
-import Registro from './src/screens/resgiter/registro.jsx';
-import RegistroParteDois from './src/screens/resgiterParteDois/registroParteDois.jsx';
+import Routes from "./src/routes.js";
 
 
 export default function App() {
   return (
-    <Login/>
+    <Routes/>
   );
 }
 
